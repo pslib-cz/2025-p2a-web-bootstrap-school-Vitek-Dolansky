@@ -3,104 +3,98 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <title>SOŠ DIGITAL</title>
+  <script type="module" src="src/main.js"></script>
+  <title>SOŠ Digital</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="public/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
-        SOŠ Digital
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Domů</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Studijní obory</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Novinky</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Události</a>
-          </li>
+  <nav class="navbar navbar-light bg-light shadow">
+    <div class="container-fluid"> <a class="navbar-brand" href="#"> <img src="/images/logo.svg" alt="Logo" width="30"
+          height="30" class="d-inline-block align-text-top"> <span class="fw-bold">SOŠ Digital</span> </a>
+      <div class="d-none d-md-flex">
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item me-3"><a class="nav-link fw-bold" href="#"><span>Domů</span></a></li>
+          <li class="nav-item me-3"> <a class="nav-link" href="#obory"><span>Studijní obory</span></a> </li>
+          <li class="nav-item me-3"> <a class="nav-link" href="#novinky"><span>Novinky</span></a> </li>
+          <li class="nav-item me-3"> <a class="nav-link" href="#udalosti"><span>Události</span></a> </li>
+          <li class="nav-item me-3"> <a href="#prihlaska" class="btn btn-primary" role="button"><span>Přihláška</span></a></li>
         </ul>
-        <a class="nav-link" href="#" style="text-align: center;"><button type="button"
-            class="btn btn-primary">Přihláška</button></a>
+      </div> <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon"></span> </button>
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item"> <a class="nav-link fw-bold" href="#">Domů</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#obory">Studijní obory</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#novinky">Novinky</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#udalosti">Události</a> </li>
+            <li class="nav-item"> <a href="#prihlaska" class="btn btn-primary" role="button">Přihláška</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
-
-  <header class="text-black text-center">
+  <header class="pb-5 bg-white">
+    <div class="container"> <span class="badge text-bg-secondary text-light mt-3 mb-2">Fiktivní ukázkový web</span> </div>
     <div class="container">
-      <h1 class="display-5 fw-bold">Střední odborná škola Digital</h1>
-      <p class="lead text-center-left">Moderní vzdělávání v IT, designu a digitálních médiích.<br>Studujte u nás, jsme
-        vaše jednička!</p>
-      <button type="button" class="btn btn-primary py-2"><a href="#obory" ;
-          style="color: white; text-decoration:none;">Studijní obory</a></button>
-      <button type="button" class="btn btn-outline-secondary py-2"><a href="#faq"
-          style="text-decoration: none; color: rgb(91, 91, 91);">Nejčastější dotazy</a></button>
-    </div>
-  </header>
-
-  <section class="py-4 bg-light text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h3>45 000+</h3>
-          <p>Absolventů</p>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="fw-bold h1 mb-3">Střední odborná škola Digital</h1>
+          <p class="text-body-secondary"> Moderní vzdělávání v IT, designu a digitálních médií<br> Studujte u nás, jsme
+            vaše <em>jednička</em>! </p>
+          <div class="row mb-3">
+            <div class="col-auto"> <a role="button" class="btn btn-primary" href="#obory"><span>Studijní obory</span></a> </div>
+            <div class="col-auto ps-0"> <a role="button" class="btn btn-outline-secondary" href="#dotazy"><span>Nejčastější dotazy</span></a> </div>
+          </div>
+          <div class="row">
+            <div class="col-auto mt-1 mb-3">
+              <div class="fw-medium">45 000+</div>
+              <div class="text-secondary"><small>Absolventů</small></div>
+            </div>
+            <div class="col-auto mt-1 mb-3">
+              <div class="fw-medium">150</div>
+              <div class="text-secondary text-nowrap"><small>Let zkušeností</small></div>
+            </div>
+            <div class="col-auto mt-1 mb-3">
+              <div class="fw-medium">99%</div>
+              <div class="text-secondary"><small>Uplatnění</small></div>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h3>150</h3>
-          <p>Let zkušeností</p>
-        </div>
-        <div class="col">
-          <h3>99%</h3>
-          <p>Uplatnění</p>
-        </div>
-        <div class="container-lg">
-          <img src="dist/assets/hero-image-BYahcXaZ.webp" class="img-fluid rounded-3 shadow-lg" alt="hero">
+        <div class="col-lg-6">
+          <div class="card"> <img class="card-img" src="/images/hero-image.webp" alt="Budova školy"> </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section id="obory" class="py-5">
+  </header>
+  <section class="pt-5 pb-4 bg-light">
     <div class="container">
-      <h2 class="text-center-left mb-4">Studijní obory</h2>
-      <div class="row g-4">
+      <h2 id="obory">Studijní obory</h2>
+      <div class="row">
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card mb-3 me-0">
             <div class="card-body">
-              <h4 class="card-title">Fotografie</h4>
-              <p class="card-text">Ateliér, práce se světlem, postprodukce.</p>
+              <h5 class="card-title">Fotografie</h5>
+              <p class="card-text">Ateliér, práce se světlem, postprodukce</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card mb-3 me-0">
             <div class="card-body">
-              <h4 class="card-title">Video</h4>
-              <p class="card-text">Střih, color grading, zvuk, produkce.</p>
+              <h5 class="card-title">Video</h5>
+              <p class="card-text">Střih, color grading, zvuk, produkce</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
+          <div class="card mb-3 me-0">
             <div class="card-body">
-              <h4 class="card-title">Audio</h4>
-              <p class="card-text">Podcasty, hudební produkce, mix a mastering.</p>
+              <h5 class="card-title">Audio</h5>
+              <p class="card-text">Podcasty, hudební produkce, mix a mastering</p>
             </div>
           </div>
         </div>
